@@ -9,62 +9,8 @@
 
     <title>Chris Dedman-Rollet Website</title>
     <h1 id="title"></h1>
-    <style>
-        * {
-            box-sizing: border-box;
-            background-color: bisque;
-        }
-
-        .header,
-        .footer {
-            background-color: grey;
-            color: rgb(7, 7, 7);
-            padding: 15px;
-            text-align: center;
-        }
-
-        .column {
-            float: left;
-            padding: 15px;
-        }
-
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        .menu {
-            float: left;
-            max-width: 25%;
-            height: 100%;
-            padding: 1em;
-            border: solid #333;
-            color: black;
-        }
-
-        .content {
-            width: 75%;
-            color: black;
-        }
-
-        .menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .menu li {
-            padding: 8px;
-            margin-bottom: 8px;
-            background-color: #c9c6e2;
-            color: #f8f8f8;
-        }
-
-        .menu li:hover {
-            background-color: #0099cc;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style/main.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -88,15 +34,20 @@
             <h1 id="menu"><h2>Contact</h2>
 
                 <p>Thank you for your interest in contacting me, you can do so there:</p>
-
-                    <li><b>Instagram:</b></li>
-                        <ul><a href=" https://instagram.com/christechjourney" target="_blank"rel="noreferrer noopener">Instagram</a></ul>
-                    <li><b>GitHub:</b></li>
-                        <ul><a href="https://github.com/chrisdedman" target="_blank" rel="noreferrer noopener">GitHub</a></ul>
-                    <li><b>Twitter:</b></li>
-                        <ul><a href="https://twitter.com/DedmanRollet" target="_blank" rel="noreferrer noopener">Twitter</a>
-                    </ul>
-
+                <ul class="social-icon">
+                    <li>
+                        <a class="twitter" href="https://twitter.com/DedmanRollet" target="_blank" rel="noreferrer noopener" title="Visit my Twitter"><i class="fa fa-twitter-square" style="font-size:40px"></i></a>
+                    </li>
+                    <li>
+                        <a class="instagram" href="https://instagram.com/christechjourney" target="_blank" rel="noreferrer noopener" title="Visit my Instagram"><i class="fa fa-instagram" style="font-size:40px"></i></a>
+                    </li>
+                    <li>
+                        <a class="github" href="https://github.com/chrishaman" target="_blank" rel="noreferrer noopener" title="Visit my GitHub"><i class="fa fa-github-square" style="font-size:40px"></i></a>
+                    </li>
+                    <li>
+                        <a class="linkedin" href="https://www.linkedin.com/in/chris-dedman-rollet/" target="_blank" rel="noreferrer noopener" title="Visit my LinkedIn"><i class="fa fa-linkedin-square" style="font-size:40px"></i></a>
+                    </li>
+                </ul>
         </div>
     </div>
 
