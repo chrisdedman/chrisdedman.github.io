@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    <title>Chris Dedman-Rollet Website</title>
+    <h1 id="title"></h1>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: bisque;
+        }
+
+        .header,
+        .footer {
+            background-color: grey;
+            color: rgb(7, 7, 7);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .column {
+            float: left;
+            padding: 15px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .menu {
+            float: left;
+            max-width: 25%;
+            height: 100%;
+            padding: 1em;
+            border: solid #333;
+            color: black;
+        }
+
+        .content {
+            width: 75%;
+            color: black;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #c9c6e2;
+            color: #f8f8f8;
+        }
+
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Per Astra Ad Astra</h1>
+    </div>
+
+    <div class="clearfix">
+        <div class="column menu">
+            <h1 id="menu">Menu</h1>
+            <ul>
+                <li><a href="blog.html">Home</a></li>                
+                <li><a href="blog-0.html">Blog</a></li>
+                <li><a href="blog-2.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="column content">
+
+            <h1 id="menu"><h2>Articles</h2>
+
+                <p>Section underconstruction...</p>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Chris Dedman-Rollet© Copyright 2022</p>
+    </div>
+
+</body>
+
+</html>

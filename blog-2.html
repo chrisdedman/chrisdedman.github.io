@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Language" content="en">
+        <meta name="color-scheme" content="light dark">
+
+        <title>Chris Dedman-Rollet Website</title>
+        <h1 id="title"></h1>
+        <style>
+            * {
+                box-sizing: border-box;
+                background-color: bisque;
+            }
+
+            .header, .footer {
+                background-color: grey;
+                color: rgb(7, 7, 7);
+                padding: 15px;
+                text-align: center;
+            }
+
+            .column {
+                float: left;
+                padding: 15px;
+            }
+
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .menu {
+                float: left;
+                max-width: 25%;
+                height: 100%;
+                padding: 1em;
+                border: solid #333;
+                color: black;
+            }
+
+            .content {
+                width: 75%;
+                color: black;
+            }
+
+            .menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .menu li {
+                padding: 8px;
+                margin-bottom: 8px;
+                background-color: #c9c6e2;
+                color: #f8f8f8;
+            }
+
+            .menu li:hover {
+                background-color: #0099cc;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Per Astra Ad Astra</h1>
+        </div>
+
+    <div class="clearfix">
+        <div class="column menu">
+            <h1 id="menu">Menu</h1>
+            <ul>
+                <li><a href="blog.html">Home</a></li>
+                <li><a href="blog-0.html">Blog</a></li>
+                <li><a href="blog-2.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="column content">
+            <h1 id="menu">Who Am I?</h1>
+            <img src="img/me.jpg" height="250px">
+            <p>
+                Hi there, Chris here. Thank you for stopping by my presentation and my blog. 
+                I am a Frenchman who immigrate to the United States of America in early 2020, and I am now a permanent resident of California. 
+                I am pursuing an Associate of Science in Computer Information System and a Bachelor of Science in Computer Science.<br> 
+                I am a former butcher with a 12 years background in this field. 
+                I decided to change my path for technology in late 2019 when my wife ~ a Senior Software Engineer~ started to teach me the programming language Python. 
+                I have a goal to work for a space company, it has been a dream of mine when I was little but never thought it could be a reality.
+                I dropped out of school when I was 14 for work as a butcher, and now that I am back in the educational system, I realize the importance of school, and with hard work, everything is possible.
+                <br>
+                <br>
+                So far, I am certified CompTIA Information Technology Fundamentals Plus (ITF+), and I passed my General Educational Development (GED) in the US. 
+                I do not have previous degrees or certifications in any domain, but I am working on my Cisco Certified Network Associate (CCNA). <br>
+                <a onclick="javascript:ShowHide('HiddenDiv1')"><font color="red">See Image...</font></a>
+            
+            <div class="mid" id="HiddenDiv1" style="display: none;">
+                <img src="img/itf.png" height="250px"></div>
+
+                My blog was honored to be a finalist for the 2020 Cisco IT Blog Awards in the category Best Newcomer and recently received an award for my contribution to helping the community by the Cisco Learning Network Community. <br>
+                <a onclick="javascript:ShowHide('HiddenDiv2')"><font color="red">See Image...</font></a>
+            
+            <div class="mid" id="HiddenDiv2" style="display: none;">
+                <img src="img/cisco-1.png" height="250px">
+                <img src="img/cisco-2.png" height="250px"></div>
+                <br>
+                <br>
+                I use to say a motivational quote to keep me and others motivated, it is “Live your dream, do not dream your life!”.
+                Do not be afraid to contact me, I will respond to you for sure. <br>Thank you for your visit, and see you in the next post :).     </p>
+
+
+            <script type="text/javascript">// <![CDATA[
+                function ShowHide(divId) {
+                    if (document.getElementById(divId).style.display == 'none') {
+                        document.getElementById(divId).style.display = 'block';
+                    }
+                    else {
+                        document.getElementById(divId).style.display = 'none';
+                    }
+                }
+                // ]]></script>
+            </div>
+        </div>
+    </div>
+
+        <div class="footer">
+            <p>Chris Dedman-Rollet© Copyright 2022</p>
+        </div>
+
+    </body>
+</html>
