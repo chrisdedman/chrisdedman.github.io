@@ -1,0 +1,96 @@
+html {
+  overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+    background-color: bisque;
+}
+
+.header,
+.footer {
+    background-color: grey;
+    color: rgb(7, 7, 7);
+    padding: 15px;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    padding: 15px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menu {
+    float: left;
+    max-width: 25%;
+    height: 100%;
+    padding: 1em;
+    border: solid #333;
+    color: black;
+}
+
+.content {
+    width: 75%;
+    color: black;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #c9c6e2;
+    color: #f8f8f8;
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+.menu2 {
+    float: right;
+    max-width: 100%;
+    height: 100%;
+    padding: 1em;
+    border: solid #333;
+    color: black;
+    overflow-x: hidden;
+}
+
+.column2 {
+    float: right;
+    padding: 15px;
+    overflow-x: hidden;
+}
+
+/* Social Icon */
+
+.social-icon li {
+  display: inline-block;
+}
+
+.social-icon li a {
+  color: #000;
+  width: 35px;
+  height: 35px;
+  line-height: 38px;
+  display: block;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 16px;
+  margin: 15px 6px 12px 6px;
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
