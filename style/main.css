@@ -3,7 +3,7 @@ html {
 }
 * {
     box-sizing: border-box;
-    background-color: bisque;
+    background-color: rgb(228, 217, 204);
 }
 
 .header,
@@ -48,12 +48,12 @@ html {
 .menu li {
     padding: 8px;
     margin-bottom: 8px;
-    background-color: #c9c6e2;
+    background-color: #918ea3;
     color: #f8f8f8;
 }
 
 .menu li:hover {
-    background-color: #0099cc;
+    background-color: #3941af;
 }
 
 .menu2 {
