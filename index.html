@@ -16,7 +16,7 @@
 
 <body>
     <div class="header">
-        <h1>Per Astra Ad Astra</h1>
+        <h1 class="anim">Per Astra Ad Astra</h1>
     </div>
 
     <div class="clearfix">
@@ -44,8 +44,35 @@
 I hope you will enjoy it, and I redirect you as well on my other blog to read my previous articles.<br>
 I will as well, make some modifications along the way as I acquire more knowledge in HTML (even if I do not want to make a website for a living, it is nice to know how to make one).</p>
                 <br>
-                <li><b>Previous blog:</b></li>
-                    <ul><a href="https://christechjourney.wordpress.com" target="_blank" rel="noreferrer noopener">Chris Tech Journey</a></ul>
+                
+                <!-- Latest article goes here -->
+                    <h3>Latest article:</h3>
+                    <hr>
+                    <br>
+                    <a onclick="javascript:ShowHide('HiddenDiv1')"><font color="red"><ul>Click to See the Latest Article...</ul></font></a>
+            
+                        <div class="mid" id="HiddenDiv1" style="display: none;">
+                           <ul><ul>
+                               <div style="float: left; max-width: 80%; height: 100%; padding: 10px; border: solid #333; color: black;">
+                                <!-- Article Goes here -->
+                                <p>Sorry, no previous article for now. You still can read my articles on my previous blog:</p>
+                                    <ul><li><a href="https://christechjourney.wordpress.com" target="_blank" rel="noreferrer noopener">Chris Tech Journey</a></li></ul>
+
+                           </ul></ul>
+                            </div>
+                        </div>
+                
+                <script type="text/javascript">// <![CDATA[
+                function ShowHide(divId) {
+                    if (document.getElementById(divId).style.display == 'none') {
+                        document.getElementById(divId).style.display = 'block';
+                    }
+                    else {
+                        document.getElementById(divId).style.display = 'none';
+                    }
+                }
+                // ]]></script>
+                <!--  End of latest article section -->
 
 
         </div>

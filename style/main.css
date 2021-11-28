@@ -115,3 +115,14 @@ a:active {
 li button:hover {
   background-color: rgb(144, 163, 216);
 }
+
+.anim {
+  position: relative;
+  animation-name: header-anim;
+  animation-duration: 4s;
+}
+
+@keyframes header-anim {
+  from {background-color: rgb(132, 159, 233);}
+  to {background-color: rgb(149, 181, 184);}
+}
