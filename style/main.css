@@ -56,7 +56,7 @@ a:active {
     float: left;
     max-width: fit-content;
     height: fit-content;
-    padding: 8px;
+    padding: 5px;
     border: solid #333;
     color: black;
 }
