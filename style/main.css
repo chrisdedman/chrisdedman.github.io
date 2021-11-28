@@ -54,8 +54,8 @@ a:active {
 
 .menu {
     float: left;
-    max-width: max-content;
-    height: 100%;
+    max-width: fit-content;
+    height: fit-content;
     padding: 1em;
     border: solid #333;
     color: black;
@@ -73,8 +73,8 @@ a:active {
 }
 
 .menu li {
-    padding: 8px;
-    margin-bottom: 8px;
+    padding: 7px;
+    margin-bottom: 7px;
     background-color: #918ea3;
     color: #f8f8f8;
 }
