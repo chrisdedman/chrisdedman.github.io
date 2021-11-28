@@ -54,7 +54,7 @@ a:active {
 
 .menu {
     float: left;
-    max-width: 100%;
+    max-width: max-content;
     height: 100%;
     padding: 1em;
     border: solid #333;
@@ -68,7 +68,7 @@ a:active {
 
 .menu ul {
     list-style-type: none;
-    margin: 3%;
+    margin: 0;
     padding: 0;
 }
 
