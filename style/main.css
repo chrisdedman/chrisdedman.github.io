@@ -121,3 +121,10 @@ a:active {
   -webkit-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
 }
+
+.button {
+    width:60px;
+    height:30px;
+    font-size:10px;
+    color: #124b6e;
+}
