@@ -130,4 +130,7 @@ li button:hover {
 .margin {
     margin: 10px auto 20px;
     display: block;
+    max-width: 100%;
+    min-width: auto;
+    height: 300px;
 }
