@@ -2,6 +2,11 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  max-width: 100%; 
+  margin: auto; 
+  padding: 10px;
+}
 .pic-title {
   background-image: url("/img/bg-2.jpg");
   background-size: contains;
