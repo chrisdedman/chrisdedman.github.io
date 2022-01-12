@@ -1,0 +1,131 @@
+body {
+    margin:0; }
+html {
+    height: 100%; }
+
+
+/* unvisited link */
+a:link {
+    color: rgb(0, 0, 0);
+}
+/* visited link */
+a:visited {
+    color: #095484;
+}
+/* mouse over link */
+a:hover {
+    color: #e0120b;
+}
+/* selected link */
+a:active {
+    color: #800000;
+}
+
+/* Header, Footer  */
+.header,
+.footer {
+    background-color: grey;
+    color: rgb(7, 7, 7);
+    padding: 15px;
+    text-align: center;
+    max-height: calc(100% - 60px);
+}
+
+
+h4,h3,h2,h1 {
+    font-family: 'Indie Flower', cursive;
+}
+
+content {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+/* Social Icon */
+
+.social-icon li {
+  display: inline-block;
+}
+
+.social-icon li a {
+  color: #000;
+  width: 35px;
+  height: 35px;
+  line-height: 38px;
+  display: block;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 16px;
+  margin: 15px 6px 12px 6px;
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.button {
+    width:60px;
+    height:30px;
+    font-size:10px;
+    color: #000000;
+}
+
+li button:hover {
+  background-color: rgb(144, 163, 216);
+}
+
+/* Animation Top Header */
+.anim {
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+}
+
+@keyframes example {
+  from {background-color: rgb(132, 159, 233);}
+  to {background-color: rgb(149, 181, 184);}
+}
+
+.margin {
+    margin: 10px auto 20px;
+    display: block;
+    max-width: 100%;
+    min-width: auto;
+    height: 300px;
+}
+
+
+/* Top bar navigation menu responsive adjusting depending of screen size */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(107, 106, 126);
+  top: 0;
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #73d0d3;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 300px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
