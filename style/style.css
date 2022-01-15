@@ -129,13 +129,3 @@ ul.topnav li.right {float: right;}
   ul.topnav li.right, 
   ul.topnav li {float: none;}
 }
-
-/* Enlarge images when cursor hover the img*/
-img {
-transition:transform 0.30s ease;
-}
-
-img:hover {
--webkit-transform:scale(2);
-transform:scale(2);
-}
