@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Chris Dedman-Rollet</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en-US">
+    <meta name="color-scheme" content="light dark">
+    <meta name="Chris Dedman-Rollet" content="ComputerScience">
+    <meta name="keywords" content="Mainframe,HTML,Python,Computer Science,technology,Programming,C++,C,IT">
+
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Spartan&display=swap' rel='stylesheet'>
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1 class='anim'>Chris's Tech Journey <br>~ Per Astra Ad Astra ~</h1>
+
+    </div>
+
+    <ul class="topnav">
+
+        <li><a class="active" href="../index.html">Home</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a class="active" href="../contact.html">Contact</a></li>
+        <li><a href="../about.html">About</a></li>
+
+    </ul>
+
+    <div style="padding:20px;background-color:rgb(206, 216, 223);height:100%;">
+
+        <div style="float: middle; max-width: 100%; height: 100%; padding: 10px; color: black;">
+
+            <h2 style="text-align: center;">Preprocessor Directive in C++</h2>
+            <hr>
+            <content>
+                <img class="margin" src="../img/cpp_img.jpg">
+
+                <article style="text-align: left;">
+
+                    <header>
+                        <address>By <a rel="author" href="../about.html">Chris Dedman-Rollet</a></address>
+                        on <time pubdate datetime="01-21-2022" title="January 21th, 2022">01-21-2022</time>
+                    </header>
+
+                    <p>
+                        My strategy to be successful in my programming classes is to start learning before the actual class start. 
+                        I am currently learning C++ in preparation for my C++ class this spring semester, and today I learned what was <b>preprocessor directives</b>. 
+                        I will try to make a little summary for you here.
+                    </p>
+                    <p>
+                        So, preprocessor directives are lines of code in C++ that preceded <b>#</b> symbol. It is simply a line of code that generates code. 
+                        <br>
+                        This line will look like this:<br>
+                                                
+                        <pre class="prettyprint"><code class="language-cpp">
+#define IDENTIFIER value
+                        </code></pre>
+
+                        When you compile your code, the preprocessor will scan from top to bottom your code and will "clean up" before the compilation.
+                        <br>
+                        So, for example a simple code like this one:
+                    </p>
+
+                    
+                    <pre class="prettyprint"><code class="language-cpp">
+#include &lt;iostream&gt;
+#define NAME "Chris"
+
+int main()
+{
+    std::cout << NAME << std::endl ;
+    return 0;
+}
+                </code></pre>
+
+                    <p>
+                        <i><b><u>NOTE</u></b>: I am not using the command <b>using namespace std;</b> because I learned that it can confused the compiler if you name a variable with the same name "std".</i><br>
+                        Once the preprocessor cleaned up and rewritten the program it will become:
+                    </p>
+
+                    <pre class="prettyprint"><code class="language-cpp">
+#include &lt;iostream&gt;
+
+int main()
+{
+    std::cout << "Chris" << std::endl ;
+    return 0;
+}
+                    </code></pre>
+
+                    <p>
+                        The good thing with directives is that the <b>macro</b> (<i>a piece of code in a program</i>, in our example it will be <b>NAME</b>) can be reused anywhere in your program. 
+                        <br>
+                        I learned that you have predefined macros such as <b>_LINE_</b> which will give you the line number where it is called in your program.
+                        <br>
+                        <br>
+                        You have as well the macros without value, added with a <b>conditional compilation</b> (<i>#ifdef, #endif</i>), it can allow you to write what will or will not be compiled.
+                        <br>
+                        For example, this code:
+                    </p>
+
+                    <pre class="prettyprint"><code class="language-cpp">
+#include &lt;iostream&gt;
+
+#define NAME // define the macro NAME
+
+int main()
+{
+#ifdef NAME
+    // NAME is define
+    std::cout << "Chris\n"; 
+#endif
+
+#ifdef JOB  
+    // JOB is not define
+    std::cout << "Computer Scientist\n";
+#endif
+
+    return 0;
+}
+                    </code></pre>
+                        
+
+                    <p>
+                        The line with the macro <b>NAME</b> will be printed because <b>NAME</b> is defined at the beginning of the program, but the macro <b>JOB</b> will not be printed because <b>JOB</b> is not defined at the beginning of your program.
+                        You can do other more complex things with preprocessor directives but I will let you explore by yourself if needed (<i>I am not 100% comfortable with more complex functions, yet</i>).
+                        <br>
+                        <br>
+                        Final words, I am now part of a discord server for programmers, and a member explained to me what I tried to explain to you in this article. 
+                        You can join the server by <a href="https://discord.gg/EEqmCNekZ9" target="_blank" rel="noreferrer noopener">clicking here</a>!
+                        <br>
+                        <br>
+                        I hope this was helpful to understand what was preprocessor directives. Happy coding! &#128516;
+                    </p>
+                    
+                </article>
+            </content>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <p>
+        <h3>Chris Dedman-Rollet© Copyright 2022</h3>
+        <ul class="social-icon">
+            <li>
+                <a class="twitter" href="https://twitter.com/DedmanRollet" target="_blank" rel="noreferrer noopener"
+                    title="Visit my Twitter"><i class="fa fa-twitter-square" style="font-size:25px"></i></a>
+            </li>
+            <li>
+                <a class="instagram" href="https://instagram.com/christechjourney" target="_blank"
+                    rel="noreferrer noopener" title="Visit my Instagram"><i class="fa fa-instagram"
+                        style="font-size:25px"></i></a>
+            </li>
+            <li>
+                <a class="github" href="https://github.com/chrishaman" target="_blank" rel="noreferrer noopener"
+                    title="Visit my GitHub"><i class="fa fa-github-square" style="font-size:25px"></i></a>
+            </li>
+            <li>
+                <a class="linkedin" href="https://www.linkedin.com/in/chris-dedman-rollet/" target="_blank"
+                    rel="noreferrer noopener" title="Visit my LinkedIn"><i class="fa fa-linkedin-square"
+                        style="font-size:25px"></i></a>
+            </li>
+        </ul>
+        <div style="align-items: center;"><a href='https://www.websitecounterfree.com' target="_blank"
+                rel="noreferrer noopener"><img src='https://www.websitecounterfree.com/c.php?d=4&id=16599&s=3'
+                    style="border: 0;" alt='Free Website Counter'></a><br><small></small></div>
+        </p>
+
+    </div>
+</body>
+
+</html>
