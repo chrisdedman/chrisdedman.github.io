@@ -129,3 +129,9 @@ ul.topnav li.right {float: right;}
   ul.topnav li.right, 
   ul.topnav li {float: none;}
 }
+
+/* Raise of power format */
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
