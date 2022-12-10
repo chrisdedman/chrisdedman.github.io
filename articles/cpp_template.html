@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Chris Dedman-Rollet ~ C++ Template</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en-US">
+    <meta name="color-scheme" content="light dark">
+    <meta name="Chris Dedman-Rollet" content="ComputerScience">
+    <meta name="keywords" content="Mainframe,HTML,Python,Computer Science,technology,Programming,C++,C,IT">
+
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Spartan&display=swap' rel='stylesheet'>
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1 class='anim'>Chris's Tech Journey <br>~ Per Astra Ad Astra ~</h1>
+
+    </div>
+
+    <ul class="topnav">
+
+        <li><a class="active" href="../index.html">Home</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a class="active" href="../contact.html">Contact</a></li>
+        <li><a href="../about.html">About</a></li>
+
+    </ul>
+
+    <div style="padding:20px;background-color:rgb(206, 216, 223);height:100%;">
+
+        <div style="float: middle; max-width: 100%; height: 100%; padding: 10px; color: black;">
+
+            <h2 style="text-align: center;">C++ Template</h2>
+            <hr>
+            <content>
+                <article style="text-align: left;">
+
+                    <header>
+                        <address>By <a rel="author" href="../about.html">Chris Dedman-Rollet</a></address>
+                        on <time pubdate datetime="01-15-2022" title="January 15th, 2022">12-09-2022</time>
+                    </header>
+
+                    <p>
+                        A C++ template is like a recipe that tells the computer how to make something. 
+                        For example, if you wanted to make a bunch of different types of cookies, 
+                        you could use the same recipe but change up the ingredients to make chocolate chip cookies, 
+                        oatmeal raisin cookies, and so on. 
+                        In C++, templates work the same way - you can use the same code for different data types, 
+                        like using the same recipe to make cookies with different ingredients.
+                    </p>
+                    <p>
+                        Here's a simple example of how you might use a C++ template:
+                        <pre class="prettyprint"><code class="language-cpp">
+// define a template function that takes 
+// one parameter of type T 
+template &lt;typename T&gt;
+void print(T value) 
+{
+    // print the value to the screen
+    std::cout << value << std::endl;
+}
+
+// in main() or another function, call the 
+// template function with a few different types
+int main()
+{
+    print(5);         // prints 5
+    print("hello");   // prints hello
+    print(3.14159);   // prints 3.14159
+    return 0;
+}
+                        </code></pre>
+                        <p>
+                            In this example, the print() function is a template that can be used to print any type of value to the screen. 
+                            When you call the function, you specify the type of value that you want to print by putting it in angle brackets after the word template, 
+                            like this: template &lt;typename T&gt;. 
+                            Then, when you call the function and pass it a value, the C++ compiler will generate a new version of the function that is 
+                            specifically designed to work with the type of value that you passed in.<br>
+                            <br>
+                            I hope you found this helpful to understand what is template and how to us it in C++.
+                        </p>
+                    </p>
+
+                </article>
+            </content>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <p>
+        <h3>Chris Dedman-Rollet© Copyright 2023</h3>
+        <ul class="social-icon">
+            <li>
+                <a class="twitter" href="https://twitter.com/DedmanRollet" target="_blank" rel="noreferrer noopener"
+                    title="Visit my Twitter"><i class="fa fa-twitter-square" style="font-size:25px"></i></a>
+            </li>
+            <li>
+                <a class="instagram" href="https://instagram.com/christechjourney" target="_blank"
+                    rel="noreferrer noopener" title="Visit my Instagram"><i class="fa fa-instagram"
+                        style="font-size:25px"></i></a>
+            </li>
+            <li>
+                <a class="github" href="https://github.com/chrisdedman" target="_blank" rel="noreferrer noopener"
+                    title="Visit my GitHub"><i class="fa fa-github-square" style="font-size:25px"></i></a>
+            </li>
+            <li>
+                <a class="linkedin" href="https://www.linkedin.com/in/chris-dedman-rollet/" target="_blank"
+                    rel="noreferrer noopener" title="Visit my LinkedIn"><i class="fa fa-linkedin-square"
+                        style="font-size:25px"></i></a>
+            </li>
+        </ul>
+        <div style="align-items: center;"><a href='https://www.websitecounterfree.com' target="_blank"
+                rel="noreferrer noopener"><img src='https://www.websitecounterfree.com/c.php?d=4&id=16599&s=3'
+                    style="border: 0;" alt='Free Website Counter'></a><br><small></small></div>
+        </p>
+
+    </div>
+</body>
+
+</html>
