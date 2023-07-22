@@ -6,6 +6,7 @@
   },
   "private": true,
   "scripts": {
+    "homepage": "https://chrisdedman.github.io/app",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "qwik build",
