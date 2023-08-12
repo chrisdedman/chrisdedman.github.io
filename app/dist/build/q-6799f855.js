@@ -1,0 +1,1 @@
+import{O as o,c as t,_ as e}from"./q-734d351e.js";const r=o(t(()=>e(()=>import("./q-930dfbc0.js"),["build/q-930dfbc0.js","build/q-734d351e.js"]),"s_xYL1qOwPyDI")),a={title:"Chris Dedman Portfolio",meta:[{name:"description",content:"Software Engineering Portfolio"}]};export{r as default,a as head};
